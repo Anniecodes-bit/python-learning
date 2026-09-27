@@ -1,4 +1,17 @@
-#creat a file named Annie_info.txt using "x" mode.
-file=open("Annie_info.txt","x")
-file.write("i am ready to fight myself and kill the procastination!")
-file.close()
+#creat class student that takes 3 marks and has a method average().
+class Student:
+
+    def __init__(self,name,listOfMarks):
+        self.name=name
+        self.listOfMarks=listOfMarks
+        
+    def average(self):
+        sum=0
+        for eachValue in self.listOfMarks:
+            sum=sum + eachValue
+        average=sum/3
+        print("Average is:",average)
+
+
+object1=Student("Annie", [85,90,100])
+object1.average()

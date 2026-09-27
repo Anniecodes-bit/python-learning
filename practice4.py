@@ -1,7 +1,10 @@
-#read only the first line of bio.txt
-try:
-    with open("bio.txt","r") as f:
-      line1=f.readline()
-      print("Line 1",line1)
-except:
-    print("That files doesnot exits")
+#creat static method to validate if a number is even.
+class Number:
+    @staticmethod
+    def is_even(number):
+        if number % 2==0:
+            return True
+        else:
+            return False
+print(Number.is_even(10))
+
